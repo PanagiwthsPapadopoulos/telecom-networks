@@ -1,0 +1,358 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14780\viewh10540\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Telecommunications Networks\
+\
+Lab 1 07/05/2025 \
+\
+Papadopoulos Panagiotis 10697 \
+\
+\
+\
+"nslookup www.ece.auth.gr":\
+\
+\
+Name and IP address of the DNS server that provides the answer:\
+\
+Server:		155.207.0.32\
+Address:	155.207.0.32#53\
+\
+\
+The answer itself:\
+\
+Non-authoritative answer:\
+www.ece.auth.gr	canonical name = hosted8.it.auth.gr.\
+Name:	hosted8.it.auth.gr\
+Address: 155.207.1.221\
+\
+\
+\
+\
+"nslookup in.gr":\
+\
+\
+Name and IP address of the DNS server that provides the answer:\
+\
+Server:		155.207.0.32\
+Address:	155.207.0.32#53\
+\
+\
+The answer itself:\
+\
+Non-authoritative answer:\
+Name:	in.gr\
+Address: 213.133.127.247\
+Name:	in.gr\
+Address: 213.133.127.245\
+\
+\
+\
+\
+"nslookup \'96type=NS":\
+\
+Server:		155.207.0.32\
+Address:	155.207.0.32#53\
+\
+** server can't find \\226\\128\\147type=NS: NXDOMAIN \
+\
+\
+\
+\
+"nslookup -type=ns ece.auth.gr":\
+\
+Server:		155.207.0.32\
+Address:	155.207.0.32#53\
+\
+Non-authoritative answer:\
+ece.auth.gr	nameserver = evia.ccf.auth.gr.\
+ece.auth.gr	nameserver = thalia.ccf.auth.gr.\
+ece.auth.gr	nameserver = philippos.ccf.auth.gr.\
+\
+\
+\
+\
+"Nslookup www.cnn.gr philippos.ccf.auth.gr": \
+\
+Server:		philippos.ccf.auth.gr\
+Address:	155.207.1.25#53\
+\
+** server can't find www.cnn.gr: REFUSED\
+\
+\
+\
+\
+"nslookup www.google.com":\
+\
+Server:		155.207.0.32\
+Address:	155.207.0.32#53\
+\
+Non-authoritative answer:\
+Name:	google.com\
+Address: 216.58.209.46\
+\
+\
+\
+\
+"nslookup -type=ns ethz.ch":\
+\
+Server:		155.207.0.32\
+Address:	155.207.0.32#53\
+\
+Non-authoritative answer:\
+ethz.ch	nameserver = ns2.switch.ch.\
+ethz.ch	nameserver = ns2.ethz.ch.\
+ethz.ch	nameserver = ns1.ethz.ch.\
+\
+\
+\
+\
+\
+"nslookup"\
+> set type=mx\
+> \
+> server ns1.ethz.ch\
+Default server: ns1.ethz.ch\
+Address: 2001:67c:10ec::a#53\
+Default server: ns1.ethz.ch\
+Address: 129.132.98.8#53\
+> yahoo.com\
+Server:		ns1.ethz.ch\
+Address:	2001:67c:10ec::a#53\
+\
+** server can't find yahoo.com: REFUSED\
+\
+\
+\
+\
+"nslookup ethz.ch":\
+\
+Server:		155.207.0.32\
+Address:	155.207.0.32#53\
+\
+Non-authoritative answer:\
+Name:	ethz.ch\
+Address: 129.132.19.216\
+\
+\
+\
+\
+"nslookup -type=a ethz.ch":\
+\
+Server:		155.207.0.32\
+Address:	155.207.0.32#53\
+\
+Non-authoritative answer:\
+Name:	ethz.ch\
+Address: 129.132.19.216\
+\
+\
+\
+\
+"nslookup -type=ns ethz.ch":\
+\
+Server:		155.207.0.32\
+Address:	155.207.0.32#53\
+\
+Non-authoritative answer:\
+ethz.ch	nameserver = ns2.switch.ch.\
+ethz.ch	nameserver = ns2.ethz.ch.\
+ethz.ch	nameserver = ns1.ethz.ch.\
+\
+\
+\
+\
+\
+============   2   ============\
+\
+\
+\
+"ifconfig":\
+\
+flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500\
+	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>\
+	ether 4e:50:07:8d:a4:c9\
+	inet6 fe80::4fc:f5fc:2a05:eb29%en0 prefixlen 64 secured scopeid 0xb \
+	inet 10.91.108.78 netmask 0xffffe000 broadcast 10.91.127.255\
+	inet6 2001:648:2800:1913:8bb:9cf7:d3e1:ea61 prefixlen 64 autoconf secured \
+	inet6 2001:648:2800:1913:b434:db82:790f:35f4 prefixlen 64 autoconf temporary \
+	nd6 options=201<PERFORMNUD,DAD>\
+	media: autoselect\
+	status: active\
+\
+\
+\
+\
+"scutil --get ComputerName":\
+\
+\uc0\u928 \u945 \u957 \u945 \u947 \u953 \u974 \u964 \u951 \u962 \'92s MacBook Air\
+\
+\
+\
+\
+"scutil --dns":\
+\
+resolver #1\
+  nameserver[0] : 155.207.0.32\
+  nameserver[1] : 155.207.0.31\
+  nameserver[2] : 155.207.0.33\
+  if_index : 11 (en0)\
+  flags    : Scoped, Request A records, Request AAAA records\
+  reach    : 0x00000002 (Reachable)\
+\
+\
+\
+\
+"traceroute www.google.com":\
+\
+traceroute to www.google.com (216.58.205.36), 64 hops max, 40 byte packets\
+ 1  wless1-vlan454.ccf.auth.gr (10.91.96.2)  6.556 ms  4.317 ms  4.666 ms\
+ 2  atlas.ccf.auth.gr (155.207.100.9)  4.009 ms  4.964 ms  5.884 ms\
+ 3  10.54.70.2 (10.54.70.2)  5.572 ms  5.060 ms  5.533 ms\
+ 4  10.54.70.6 (10.54.70.6)  14.474 ms  13.153 ms  13.374 ms\
+ 5  10.54.70.7 (10.54.70.7)  13.262 ms  13.177 ms  13.076 ms\
+ 6  62.217.101.132 (62.217.101.132)  14.475 ms  14.329 ms  14.695 ms\
+ 7  kolettir-eier-ae.backbone.grnet.gr (62.217.100.62)  16.546 ms  14.976 ms  15.487 ms\
+ 8  * * *\
+ 9  ae7-0.rt1.mil2.it.geant.net (62.40.98.79)  48.908 ms  49.575 ms  47.555 ms\
+10  72.14.209.138 (72.14.209.138)  47.571 ms\
+    google-gw.rt1.mil.it.geant.net (83.97.89.25)  47.281 ms\
+    72.14.209.138 (72.14.209.138)  47.018 ms\
+11  108.170.255.203 (108.170.255.203)  48.106 ms\
+    192.178.99.215 (192.178.99.215)  48.099 ms  48.516 ms\
+12  192.178.44.135 (192.178.44.135)  48.288 ms\
+    172.253.73.61 (172.253.73.61)  47.727 ms\
+    192.178.44.135 (192.178.44.135)  48.459 ms\
+13  mil07s19-in-f4.1e100.net (216.58.205.36)  48.109 ms  90.016 ms  49.008 ms\
+\
+\
+\
+\
+"ping -c 4 www.google.com":\
+\
+PING www.google.com (216.58.205.36): 56 data bytes\
+64 bytes from 216.58.205.36: icmp_seq=0 ttl=109 time=70.410 ms\
+Request timeout for icmp_seq 1\
+64 bytes from 216.58.205.36: icmp_seq=2 ttl=109 time=104.059 ms\
+64 bytes from 216.58.205.36: icmp_seq=3 ttl=109 time=58.282 ms\
+\
+--- www.google.com ping statistics ---\
+4 packets transmitted, 3 packets received, 25.0% packet loss\
+round-trip min/avg/max/stddev = 58.282/77.584/104.059/19.365 ms\
+\
+\
+\
+\
+\
+=======   3   =======\
+\
+4. UDP\
+\
+5. Src Port: 58566, Dst Port: 53\
+\
+6. Src: 10.91.108.78, Dst: 155.207.0.32\
+\
+7. Type: A (1) (Host Address)\
+   [Response In: 10]\
+		\
+8. Answers\
+        star.c10r.facebook.com: type A, class IN, addr 31.13.84.8\
+            Name: star.c10r.facebook.com\
+            Type: A (1) (Host Address)\
+            Class: IN (0x0001)\
+            Time to live: 57 (57 seconds)\
+            Data length: 4\
+            Address: 31.13.84.8\
+    [Request In: 8]\
+    [Time: 0.011425000 seconds]\
+\
+9. \
+\
+\
+\
+====   TRACE 2   ====\
+\
+11. User Datagram Protocol, Src Port: 3742, Dst Port: 53\
+\
+12. Destination: All-HSRP-routers_00 (00:00:0c:07:ac:00)\
+\
+13. Type: A (1) (Host Address)\
+    [Response In: 20]\
+\
+14. Answers\
+        www.mit.edu: type A, class IN, addr 18.7.22.83\
+            Name: www.mit.edu\
+            Type: A (1) (Host Address)\
+            Class: IN (0x0001)\
+            Time to live: 60 (1 minute)\
+            Data length: 4\
+            Address: 18.7.22.83\
+    Authoritative nameservers\
+        mit.edu: type NS, class IN, ns BITSY.mit.edu\
+            Name: mit.edu\
+            Type: NS (2) (authoritative Name Server)\
+            Class: IN (0x0001)\
+            Time to live: 21600 (6 hours)\
+            Data length: 8\
+            Name Server: BITSY.mit.edu\
+        mit.edu: type NS, class IN, ns STRAWB.mit.edu\
+            Name: mit.edu\
+            Type: NS (2) (authoritative Name Server)\
+            Class: IN (0x0001)\
+            Time to live: 21600 (6 hours)\
+            Data length: 9\
+            Name Server: STRAWB.mit.edu\
+        mit.edu: type NS, class IN, ns W20NS.mit.edu\
+            Name: mit.edu\
+            Type: NS (2) (authoritative Name Server)\
+            Class: IN (0x0001)\
+            Time to live: 21600 (6 hours)\
+            Data length: 8\
+            Name Server: W20NS.mit.edu\
+    Additional records\
+        BITSY.mit.edu: type A, class IN, addr 18.72.0.3\
+            Name: BITSY.mit.edu\
+            Type: A (1) (Host Address)\
+            Class: IN (0x0001)\
+            Time to live: 21600 (6 hours)\
+            Data length: 4\
+            Address: 18.72.0.3\
+        STRAWB.mit.edu: type A, class IN, addr 18.71.0.151\
+            Name: STRAWB.mit.edu\
+            Type: A (1) (Host Address)\
+            Class: IN (0x0001)\
+            Time to live: 21600 (6 hours)\
+            Data length: 4\
+            Address: 18.71.0.151\
+        W20NS.mit.edu: type A, class IN, addr 18.70.0.160\
+            Name: W20NS.mit.edu\
+            Type: A (1) (Host Address)\
+            Class: IN (0x0001)\
+            Time to live: 21600 (6 hours)\
+            Data length: 4\
+            Address: 18.70.0.160\
+    [Request In: 19]\
+    [Time: 0.016757000 seconds]\
+\
+\
+15. \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
