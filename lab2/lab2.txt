@@ -1,0 +1,40 @@
+LAB 2 - HTTP    
+
+1. Version HTTP/1.1
+
+2. En-US, en, q=0.9
+
+3. Computer address: 10.0.0.44
+   Server address: 128.119.245.12
+
+4. 200 OK
+
+5. Sat, 30 Jan 2021 06:59:02
+
+6. Content length = 128 bytes
+
+7. 
+
+8. No line
+
+9. The data was received. The status is 200 OK
+
+10. The line is present. The information that follows is the date: Sat, 30 Jan 2021 06:59:02
+
+11. 304, Not Modified. No content was transmitted.
+
+12 One GET request was sent, with the number 26
+
+13. Packet 32
+
+14. 200 OK
+
+15. 5 packets, packet No 27-31
+
+16. 4 GET requests @: 128.119.245.12 x2, 178.79.137.164, 104.98.115.146
+
+17. The two images were downloaded in series.
+
+18. 401 - Unauthorized
+
+19. Authorization field with my credentials.
